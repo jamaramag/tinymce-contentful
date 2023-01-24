@@ -13,7 +13,7 @@ window.contentfulExtension.init(function(api) {
 
     var p = tweak(api.parameters.instance.plugins);
     var tb = tweak(api.parameters.instance.toolbar);
-    var mb = tweak(api.parameters.instance.menubar);  
+    var mb = tweak(api.parameters.instance.menubar);
 
     api.window.startAutoResizer();
 
@@ -27,6 +27,8 @@ window.contentfulExtension.init(function(api) {
       autoresize_bottom_margin: 15,
       resize: false,
       image_caption: true,
+      font_formats: "Andale Mono=andale mono,times; Arial=arial,helvetica,sans-serif; Arial Black=arial black,avant garde; Book Antiqua=book antiqua,palatino; Comic Sans MS=comic sans ms,sans-serif; Courier New=courier new,courier; Georgia=georgia,palatino; Helvetica=helvetica; Impact=impact,chicago; Symbol=symbol; Tahoma=tahoma,arial,helvetica,sans-serif; Terminal=terminal,monaco; Times New Roman=times new roman,times; Trebuchet MS=trebuchet ms,geneva; Verdana=verdana,geneva; Webdings=webdings; Wingdings=wingdings,zapf dingbats",
+      content_style: "@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');",
       init_instance_callback : function(editor) {
         var listening = true;
 
